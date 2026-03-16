@@ -92,15 +92,19 @@
     gap: 60px;
     position: relative;
     overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-qNChJd-MhRs?w=1400&h=900&fit=crop&auto=format&q=50');
+    background-size: cover;
+    background-position: center;
   }
 
   .hero::before {
     content: '';
     position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(201,75,26,0.08) 0%, transparent 70%),
-      repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.02) 60px),
-      repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.02) 60px);
+      rgba(10,10,10,0.82),
+      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(201,75,26,0.12) 0%, transparent 70%),
+      repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.015) 60px),
+      repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.015) 60px);
     pointer-events: none;
   }
 
@@ -570,6 +574,25 @@
     border-radius: 2px;
   }
 
+  .product-img {
+    width: calc(100% + 56px);
+    margin: -28px -28px 20px -28px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: var(--steel);
+  }
+
+  .card-img {
+    width: calc(100% + 40px);
+    margin: -20px -20px 14px -20px;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px 2px 0 0;
+    background: var(--iron);
+  }
+
   /* ── CREATORS ── */
   #creators { background: var(--carbon); }
 
@@ -894,6 +917,7 @@
 
   <div class="hero-visual">
     <div class="mock-card">
+      <img class="card-img" src="https://images.unsplash.com/photo-MXeDE_yCdHQ?w=400&h=130&fit=crop&auto=format&q=80" alt="DEWALT 20V Drill">
       <div class="card-badge">Builder Verified</div>
       <div class="card-tool-name">DEWALT 20V Drill</div>
       <div class="card-creator">As seen on <span>Matt Risinger</span></div>
@@ -905,6 +929,7 @@
       <div class="card-affiliate">View on Amazon →</div>
     </div>
     <div class="mock-card">
+      <img class="card-img" src="https://images.unsplash.com/photo-dhFpe7CTI5Y?w=400&h=130&fit=crop&auto=format&q=80" alt="Milwaukee M18 Saw">
       <div class="card-badge">Builder Verified</div>
       <div class="card-tool-name">Milwaukee M18 Saw</div>
       <div class="card-creator">As seen on <span>Perkins Builder Bros</span></div>
@@ -916,6 +941,7 @@
       <div class="card-affiliate">View on Home Depot →</div>
     </div>
     <div class="mock-card">
+      <img class="card-img" src="https://images.unsplash.com/photo-PkHf7BUWbtk?w=400&h=130&fit=crop&auto=format&q=80" alt="Fluke 117 Multimeter">
       <div class="card-badge">Builder Verified</div>
       <div class="card-tool-name">Fluke 117 Multimeter</div>
       <div class="card-creator">As seen on <span>This Old House</span></div>
@@ -1017,6 +1043,7 @@
   <div class="product-grid">
 
     <div class="product-card">
+      <img class="product-img" src="https://images.unsplash.com/photo-MXeDE_yCdHQ?w=600&h=200&fit=crop&auto=format&q=80" alt="DEWALT 20V MAX Cordless Drill">
       <span class="product-tag">Power Tools</span>
       <div class="product-card-badge">Builder Verified</div>
       <div class="product-name">DEWALT 20V MAX Cordless Drill</div>
@@ -1032,6 +1059,7 @@
     </div>
 
     <div class="product-card">
+      <img class="product-img" src="https://images.unsplash.com/photo-dhFpe7CTI5Y?w=600&h=200&fit=crop&auto=format&q=80" alt="Milwaukee M18 FUEL Circular Saw">
       <span class="product-tag">Power Tools</span>
       <div class="product-card-badge">Builder Verified</div>
       <div class="product-name">Milwaukee M18 FUEL Circular Saw</div>
@@ -1047,6 +1075,7 @@
     </div>
 
     <div class="product-card">
+      <img class="product-img" src="https://images.unsplash.com/photo-PkHf7BUWbtk?w=600&h=200&fit=crop&auto=format&q=80" alt="Fluke 117 Electrician's Multimeter">
       <span class="product-tag">Electrical</span>
       <div class="product-card-badge">Builder Verified</div>
       <div class="product-name">Fluke 117 Electrician's Multimeter</div>
@@ -1062,6 +1091,7 @@
     </div>
 
     <div class="product-card">
+      <img class="product-img" src="https://images.unsplash.com/photo-9hfnGjOUlw0?w=600&h=200&fit=crop&auto=format&q=80" alt="Estwing 20 oz Rip Hammer">
       <span class="product-tag">Hand Tools</span>
       <div class="product-card-badge">Builder Verified</div>
       <div class="product-name">Estwing 20 oz Rip Hammer</div>
@@ -1077,6 +1107,7 @@
     </div>
 
     <div class="product-card">
+      <img class="product-img" src="https://images.unsplash.com/photo-1590736969596-11b2f1a1c9f4?w=600&h=200&fit=crop&auto=format&q=80" alt="3M WorkTunes Hearing Protector">
       <span class="product-tag">Safety</span>
       <div class="product-card-badge">Builder Verified</div>
       <div class="product-name">3M WorkTunes Hearing Protector</div>
@@ -1092,6 +1123,7 @@
     </div>
 
     <div class="product-card">
+      <img class="product-img" src="https://images.unsplash.com/photo-4mAcustUNPs?w=600&h=200&fit=crop&auto=format&q=80" alt="Ridgid 10&quot; Adjustable Pipe Wrench">
       <span class="product-tag">Plumbing</span>
       <div class="product-card-badge">Builder Verified</div>
       <div class="product-name">Ridgid 10" Adjustable Pipe Wrench</div>
